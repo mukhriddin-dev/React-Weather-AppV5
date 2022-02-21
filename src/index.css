@@ -1,0 +1,376 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.sch{
+  font-size: 40px;
+font-family: sans-serif;
+  color: #fff
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/sam.jpg);
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  z-index: 0;
+}
+
+.left-wp {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:rgba(0, 0, 0, 0.377);
+}
+
+.right-wp {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:rgba(255, 255, 255, 0.068);
+}
+
+.search {
+  width: 290px;
+  height: 48px;
+  padding: 0 9px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.301);
+  position: relative;
+  z-index: 66;
+  outline: none;
+  border: none;
+  border-bottom: 2px crimson solid;
+  font-size: 19px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.search:hover{
+  border-bottom: 4px seagreen solid;
+}
+
+.search:focus {
+  border-bottom: 6px crimson solid;
+  background: rgba(255, 255, 255, 0.685);
+  color: rgb(8, 8, 8);
+}
+
+.search::placeholder {
+  color: #000;
+}
+
+.country {
+  font-size: 45px;
+  color: #fff;
+  position: absolute;
+  top:26vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dates {
+  position: absolute;
+  font-size: 15px;
+  top: 36vh;
+  left: 17.5%;
+  color: #fff;
+}
+
+.deg{
+  font-size: 155px;
+  position: absolute;
+  font-family: sans-serif;
+  /* margin-left: 60px; */
+  color:#fff;
+  font-weight: 500;
+  margin: 15px 0 0 65px;
+}
+
+.types{
+  position: absolute;
+  top:64%;
+  color:#fff;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  font-weight: 700;
+}
+
+.temps{
+  position: absolute;
+  top:70%;
+  color:#fff;
+
+}
+
+.btnse{
+  display: none;
+}
+
+@media only screen and (max-width: 768px){
+
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/sam.jpg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    flex-direction: column;
+  }
+  
+  .left-wp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-wp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search {
+    width: 250px;
+    height: 48px;
+    padding: 0 9px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.301);
+    position: absolute;
+    z-index: 66;
+    outline: none;
+    border: none;
+    border-bottom: 2px crimson solid;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    left:100px;
+    top: 500px;
+  }
+  .search:hover{
+    border-bottom: 4px seagreen solid;
+  }
+  
+  .search:focus {
+    border-bottom: 6px crimson solid;
+    background: rgba(255, 255, 255, 0.685);
+    color: rgb(8, 8, 8);
+  }
+  
+  .search::placeholder {
+    color: #000;
+  }
+  
+  .country {
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    top:4rem;
+  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .dates {
+    position: absolute;
+    font-size: 15px;
+    top: 39%;
+    left: 29.5%;
+    color: #fff;
+  }
+  
+  .deg{
+    font-size: 125px;
+    position: absolute;
+    font-family: sans-serif;
+    color:#fff;
+    font-weight: 500;
+     top:17%;
+     left: 8%;
+  }
+  
+  .types{
+    position: absolute;
+    top:48%;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    font-weight: 700;
+   
+  }
+  
+  .temps{
+    position: absolute;
+    top:53%;
+    color:#fff;
+  
+  }
+
+  .btnse{
+    display: none;
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    margin: 55px 0 0 10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 20px;
+    border-bottom:3px solid rgb(17, 201, 0);
+  }
+
+  .btnse:active{
+background:#5555;
+border-bottom:1px solid rgb(17, 201, 0);
+color:#fff;
+  }
+  
+}
+
+@media only screen and (max-width: 576px){
+
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/sam.jpg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    flex-direction: column;
+  }
+  
+  .left-wp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-wp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search {
+    width: 290px;
+    height: 48px;
+    padding: 0 9px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.301);
+    position: absolute;
+    z-index: 66;
+    outline: none;
+    border: none;
+    border-bottom: 2px crimson solid;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    left:18%;
+    top: 500px;
+  }
+  .search:hover{
+    border-bottom: 4px seagreen solid;
+  }
+  
+  .search:focus {
+    border-bottom: 6px crimson solid;
+    background: rgba(255, 255, 255, 0.685);
+    color: rgb(8, 8, 8);
+  }
+  
+  .search::placeholder {
+    color: #000;
+  }
+  
+  .country {
+    font-size: 45px;
+    color: #fff;
+    position: absolute;
+    top:4rem;
+  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .dates {
+    position: absolute;
+    font-size: 15px;
+    top: 39%;
+    left: 29.5%;
+    color: #fff;
+  }
+  
+  .deg{
+    font-size: 105px;
+    position: absolute;
+    font-family: sans-serif;
+    color:#fff;
+    font-weight: 500;
+     top:17%;
+     left: 14%;
+  }
+  
+  .types{
+    position: absolute;
+    top:55%;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    font-weight: 700;
+   
+  }
+  
+  .temps{
+    position: absolute;
+    top:60%;
+    color:#fff;
+  transition:  all 0.1s ease-in-out;
+  }
+
+  .btnse{
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    margin: 55px 0 0 10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 20px;
+    border-bottom:3px solid rgb(17, 201, 0);
+    top:68%;
+    left:31%;
+  }
+
+  .btnse:active{
+background:#5555;
+border-bottom:1px solid rgb(17, 201, 0);
+color:#fff;
+  }
+  
+}
